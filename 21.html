@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task 21</title>
+</head>
+<body>
+	Вы любите шоколад?<br />
+	<input value="Нет" type="button" onmouseover="no()" id="F" style="position: relative; left: 40px;">
+	
+	<script type="text/javascript">
+		var flag = 1;
+		function no() {
+			if (flag == 1) F.style.left = "250px";
+			if (flag == 2) F.style.left = "100px";
+			if (flag == 3) F.style.left = "200px";
+			flag = flag + 1;
+			if (flag == 4) flag = 1;
+		}
+	</script>
+</body>
+</html>

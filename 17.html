@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task 17</title>
+	<style type="text/css">
+		.left {
+			float: left;
+		}
+
+		.right {
+			float: right;
+		}
+
+		#circle {
+			  position: relative;
+			  z-index: 0;
+			  background-color: #4D8FA3;
+			  width: 150px;
+			  height: 150px;
+			  border-radius: 100px;
+			  margin: 50px auto;
+		}
+
+		.eye {
+			position: relative;
+			width: 30px;
+			height: 30px;
+			border-radius: 100px;
+			background: white;
+			margin-top: 30px;
+			margin-left: 33px;
+		}
+
+		.eye.right {
+			margin-left: 0; 
+			margin-right: 33px; 
+		}
+
+		.eye.nose {
+			width: 25px;
+			height: 25px;
+			top: 75px;
+			margin-left: 64px; 
+			margin-right: 40px; 
+		}
+
+		.mouth {
+			  position: absolute;
+			  z-index: 1;
+			  top: 68px;
+			  left: 0;
+			  right: 0;
+			  height: 50px;
+			  width: 70px;
+			  margin: 0 auto;
+			  border-bottom: 12px solid white;
+			  border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="circle">
+		<div class="eye left"></div>
+		<div class="eye right"></div>
+		<div class="eye nose"></div>
+		<div class="mouth"></div>
+	</div>
+</body>
+</html>
